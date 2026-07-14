@@ -1,11 +1,15 @@
-# SE-ResMRCTNet: A Squeeze-and-Excitation Residual Multi-Resolution CNN–Transformer Network for EEG Workload Detection
+# SE-ResMRCTNet for EEG Workload Detection: Design, Deployment, and Latency Evaluation on Raspberry Pi
+
+<div align="justify">
 
 Detecting cognitive load during arithmetic tasks helps reveal how the brain processes incoming stimuli. Electroencephalography (EEG) can be used to assess cognitive load during mental arithmetic. However, accurate classification remains challenging and often depends on extensive preprocessing and hand-crafted features. Despite recent progress in EEG deep learning, translating high-performing models into efficient, deployable systems remains challenging. In this paper, we present Squeeze-and-Excitation Residual Multi-Resolution CNN–Transformer Network (SE-ResMRCTNet), a compact end-to-end architecture for EEG-based cognitive workload detection, with an emphasis on computational efficiency and resource-constrained deployment. The network first applies multi-resolution temporal convolutions to extract short- and mid-range temporal patterns from raw EEG, then performs Squeeze-and-Excitation (SE) channel recalibration to form compact embeddings for a lightweight Transformer encoder with residual connections. A residual multilayer perceptron (MLP) head after global average pooling (GAP) produces the final prediction. This design preserves local inductive biases, captures global temporal context, and keeps computation small. SE-ResMRCTNet achieves 95.83% accuracy, 91.67% sensitivity, and 100% specificity on the STEW dataset, as well as 97.20% accuracy, 97.99% sensitivity, and 95.38% specificity on the EEGMAT dataset, while utilizing only about 47.05 K parameters (183.79 KB) and 1.14 GFLOPs on STEW and about 57.80 K parameters (225.78 KB) and 1.27 GFLOPs on EEGMAT, showing an excellent balance between accuracy and efficiency. We examine the deployability of the proposed model by converting it to TensorFlow Lite and deploying it on a Raspberry Pi. The deployed system preserves identical classification performance to the PC implementation while operating within a sub-250 KB memory footprint and practical near-real-time latency under CPU-only execution.
 
-For any queries, feel free to contact us.
+</div>
 
-**Contact author:**
-Dr. Mohammod Abdul Motin
-*Assistant Professor*
-Dept. of EEE, RUET, Rajshahi, 6204, Bangladesh
+*For any queries, feel free to contact us.*
+
+**Contact author:**  
+Dr. Mohammod Abdul Motin  
+*Assistant Professor*  
+Dept. of EEE, RUET, Rajshahi, 6204, Bangladesh  
 E-mail: m.a.motin@ieee.org
