@@ -1,0 +1,19 @@
+# Core
+numpy
+scipy
+pandas
+scikit-learn
+
+# Deep learning
+tensorflow
+
+# EEG preprocessing
+mne
+
+# Visualization / interpretability
+matplotlib
+umap-learn
+
+# --- Raspberry Pi (on-device inference only) ---
+# Install this on the Pi instead of full tensorflow:
+# tflite-runtime
